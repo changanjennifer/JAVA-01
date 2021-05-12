@@ -20,5 +20,4 @@ typora-root-url: images
 
 ​      在实际应用中，为了更好的服务于应用，提升运行效率，各个JDK提供一些JVM工具，而人们也从原理和实践角度给出了JVM参数管理、性能调优的参考。 JVM的一些知识点的整理如下图:
 
-​      ![https://github.com/changanjennifer/JAVA-01/tree/main/Summary/images/JVM-summary.png](https://github.com/changanjennifer/JAVA-01/tree/main/Summary/images/JVM-summary.png)
-
+​      ![https://github.com/changanjennifer/JAVA-01/tree/main/Summary/images/JVM-summary.png](https://github.com/changanjennifer/JAVA-01/blob/main/Summary/images/JVM-summary.png)
