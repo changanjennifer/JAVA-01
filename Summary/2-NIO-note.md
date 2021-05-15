@@ -42,6 +42,6 @@
 
 ​      下图是个人理解的Java NIO 和Netty NIO通对象模型设计示意，从中去学习、理解Netty框架，以及模型建立的逐步抽象和实现过程。因为能力所限，图可能有错误之处，希望将来有时间仔细阅读Netty源码并实践时，能更新这部分的认知。
 
-  
+​       ![https://github.com/changanjennifer/JAVA-01/blob/main/Summary/images/NIO-jdknio%26Netty.png](https://github.com/changanjennifer/JAVA-01/blob/main/Summary/images/NIO-jdknio%26Netty.png)
 
    
