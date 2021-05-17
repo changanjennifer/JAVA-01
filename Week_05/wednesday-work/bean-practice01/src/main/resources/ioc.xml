@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<bean id="User001" class="io.kimmking.bean.User">
+		<property name="id" value="001"></property>
+		<property name="name" value="zhangsan"></property>
+	</bean>
+	
+	<!-- 静态工厂 -->
+	<bean id="Product001" class="io.kimmking.factory.ProductStaticFactory"
+		factory-method="getProduct">
+		<constructor-arg name="name" value="Redis in action"></constructor-arg>
+	</bean>
+	
+	<!-- 实例工厂 -->
+	<bean id ="productInstanceFactory" class="io.kimmking.factory.ProductInstanceFactory"/>
+	<bean id="Product002" class="io.kimmking.bean.Product"
+		factory-bean="productInstanceFactory"
+		factory-method="getProduct">
+		<constructor-arg name="name" value="Java in action"></constructor-arg>
+	</bean>
+	
+	<!-- 实现FactoryBean接口的factory -->
+	<bean id ="myFactoryBean" class="io.kimmking.factory.MyFactoryBean"/>
+	
+	<bean id="car" class="io.kimmking.bean.Car">
+		<property name="name" value="BMW"></property>
+		<property name="color" value="Red"></property>
+	</bean>
+	
+	<!-- 基于xml手动装配 -->
+	<bean id="person001" class="io.kimmking.bean.Person">
+		<property name="name" value="zhangsan"></property>
+		<property name="sex" value="man"></property>
+		<property name="age" value="20"></property>
+		<property name="car" ref="car"></property>
+	</bean>
+	
+	<!-- 基于xml自动装配 -->
+	<bean id="person002" class="io.kimmking.bean.Person" autowire="byName">
+		<property name="name" value="zhangsan"></property>
+		<property name="sex" value="man"></property>
+		<property name="age" value="20"></property>
+		
+	</bean>
+	
+	<!-- 基于注解-->
+	<!-- 指定扫描的包 -->
+	<context:component-scan base-package="io.kimmking"/>
+	
+</beans>
