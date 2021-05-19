@@ -1,0 +1,3 @@
+#-------starter自动装配---------
+2 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.kimmking.spring.starter.config.DemoConfig
