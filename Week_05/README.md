@@ -20,6 +20,18 @@
 
       **3.（必做）**给前面课程提供的Student/Klass/School 实现自动配置和Starter
       
+      采用Springboot 框架实现， 
+      
+      参见 
+      
+      [https://github.com/changanjennifer/JAVA-01/tree/main/Week_05/sunday-homework/spring-boot-starter-demo]: https://github.com/changanjennifer/JAVA-01/tree/main/Week_05/sunday-homework/spring-boot-starter-demo
+      
+      
+      
+      [https://github.com/changanjennifer/JAVA-01/tree/main/Week_05/sunday-homework/spring-boot-starter-demo-test]: https://github.com/changanjennifer/JAVA-01/tree/main/Week_05/sunday-homework/spring-boot-starter-demo-test
+      
+      及 
+      
       **6.（必做）**研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法：
       1）使用 JDBC 原生接口，实现数据库的增删改查操作。
       2）使用事务，PrepareStatement 方式，批处理方式，改进上述操作。
